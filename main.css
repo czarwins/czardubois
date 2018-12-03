@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    opacity: .99;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 7s;
+}
+/* keyframe animation fade in */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.container{
+    background-color: black;
+    background-image: url(images/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: scroll;
+    justify-content: center;
+}
+/* NAME TAG STYLE */
+.centerText{
+    
+    align-items: center;
+    margin: auto;
+    /* border: solid white 3px; */
+    display: flex;
+}
+#czrName h1{
+font-size: 50px;
+color: crimson;
+font-family: Oswald;
+}
+/* UPPER PAGE LINKS */
+.upperLink h2{
+    color: white;
+    font-family: "Chakra Petch";
+   
+}
+.upperLink{
+    margin: auto;
+    /* border: solid white 3px; */
+}
+.centerLink h2{
+    color: white;
+    font-family: "Chakra Petch";
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 4px; */
+    
+}
+.mainDiv a{
+    text-decoration: none;
+}
+.lowerLink h2{
+    color: white;
+    font-family: "Chakra Petch";
+}
+.lowerLink{
+    margin: auto;
+    /* border: solid white 3px; */
+}
+/* modal styling*/
+.modalText{
+	position: fixed;
+	font-family: chakra petch;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalText:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalText > div {
+    width: 50VW;
+    height: 70vh;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background-color: silver;
+	
+    
+    overflow: scroll;
+}
+#workLink{
+    color: white;
+}
+#cvLink{
+    color: white;
+}
+.modalDiv{
+    padding-top: 20px;
+}
+
+ul{
+    color: crimson;
+    list-style: none;
+    margin-top: 100px;
+}
+.mainDiv h2{
+    animation: spin 1.7s  ease-in-out;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+#nameTag:hover{
+    font-family: Josefin Sans,Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 5em;
+    transition: ease .4s;
+    width: 400px;
+}
+.mainDiv h2:hover{
+    color: crimson;
+    font-size: 1.75em;
+}
